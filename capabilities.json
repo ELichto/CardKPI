@@ -1,0 +1,202 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Values",
+            "name": "values",
+            "kind": "GroupingOrMeasure"
+        }
+    ],
+    "objects": {
+        "mainMeasure":{
+            "displayName": "Main Measure",
+            "properties": {
+                "labelSize":{
+                    "displayName": "Label Font Size",
+                    "description": "Label Font Size",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "labelColor":{
+                    "displayName": "Label Color",
+                    "description": "Label Text Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "valueSize":{
+                    "displayName": "Value font size",
+                    "description": "Value text size",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "valueColor":{
+                    "displayName": "Value Text Color",
+                    "description": "Value text color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "displayunits":{
+                    "displayName": "Display units",
+                    "type":{
+                        "enumeration": [{
+                            "displayName": "None",
+                            "value":"none"
+                        },
+                        {"displayName": "Currency",
+                            "value": "currency"
+                        }
+                    ]
+                    }
+                }
+            }
+        },
+        "secondaryMeasure":{
+            "displayName": "Secondary Measure",
+            "properties": {
+                "labelSize":{
+                    "displayName": "Label Font Size",
+                    "description": "Label Font Size",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "labelColor":{
+                    "displayName": "Label Color",
+                    "description": "Label Text Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "valueSize":{
+                    "displayName": "Value font size",
+                    "description": "Value text size",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "valueColor":{
+                    "displayName": "Value Text Color",
+                    "description": "Value text color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "displayunits":{
+                    "displayName": "Display units",
+                    "type":{
+                        "enumeration": [{
+                            "displayName": "None",
+                            "value":"none"
+                        },
+                        {"displayName": "Currency",
+                            "value": "currency"
+                        }
+                    ]
+                    }
+                }
+            }
+        },
+        "delta":{
+            "displayName":"Delta",
+            "properties": {
+                "valueSize":{
+                    "displayName": "Text size",
+                    "description": "text font size",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+               "positiveColor":{
+                    "displayName": "Positive color",
+                    "description": "Positive color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color":true	
+                            }
+                        }
+                    }
+                },
+                 "negativeColor":{
+                    "displayName": "Negative color",
+                    "description": "Negative color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color":true	
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "textsize": {
+            "displayName": "Text Size",
+            "properties": {
+                "labelSize":{
+                    "displayName": "Label Size",
+                    "description": "Label font size",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "valueSize":{
+                    "displayName": "Value Size",
+                    "description": "Value font size",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "textcolor":{
+            "displayName": "Text Color",
+            "properties": {
+                "textColor": {
+                    "displayName": "Color",
+                    "description": "Color of the text",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                { "values": {"min":1, "max": 2 } }
+            ],
+            "table": {
+                "rows": {
+                    "for":{
+                        "in": "values"
+                    }
+                }
+            }
+        }
+    ]
+}

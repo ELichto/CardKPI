@@ -1,0 +1,25 @@
+{
+    "visual": {
+        "name": "NovKPICard",
+        "displayName": "NovKPICard",
+        "guid": "testcard83D5AFB545C143CF939C8F074603B31D",
+        "visualClassName": "Visual",
+        "version": "1.0.0",
+        "description": "KPI periodic card",
+        "supportUrl": "",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "3.8.0",
+    "author": {
+        "name": "Novelis EL MALLALI SOUFIANE",
+        "email": "selmallali@novelis.io"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}
