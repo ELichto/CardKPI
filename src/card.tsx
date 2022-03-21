@@ -114,9 +114,9 @@ Cardo.updateCallback = null;
     <Box sx={{ width:'100%', height:'100vh' }}>
         <Box sx={{height:'70%'}}>
       <Grid container spacing={1} sx={{justifyContent:"center", alignItems:"center"}}>
-          <Grid item xs={12} ><Typography color="text.primary" sx={{fontSize:`${mainMeasureLabelStyle.fontSize}px` }}>{values[0] ? values[0].textLabel : "main measure"}</Typography></Grid>
+          <Grid item xs={12} ><Typography color={mainMeasureLabelStyle.color} sx={{fontSize:`${mainMeasureLabelStyle.fontSize}px` }}>{values[0] ? values[0].textLabel : "main measure"}</Typography></Grid>
             <Grid item xs={8} sx={{justifyContent:"center", alignItems:"center"}}>
-                <Typography sx={{fontSize:`${mainMeasureValueStyle.fontSize}px`}} component="div" >{mainMeasurevalue}</Typography>
+                <Typography sx={{fontSize:`${mainMeasureValueStyle.fontSize}px`}} color={mainMeasureValueStyle.color} component="div" >{mainMeasurevalue}</Typography>
             </Grid>
             <Grid item xs={4} sx={{justifyContent:"center", alignItems:"center"}}>
                 <Typography sx={{fontSize:`${deltaStyle.fontSize}px`,mr:1, textAlign:'right'}} color={color} component="div"> {"  " + (delta*100).toFixed(2) + "%"} </Typography>
@@ -127,10 +127,10 @@ Cardo.updateCallback = null;
         <Box>
         <Grid container sx={{height:'30%', mt:1}}>
             <Grid item xs={6} sx={{my:'auto'}}>
-                <Typography sx={{fontSize: `${secondaryMeasurelabelStyle.fontSize}px`, wordBreak:'break-word', my:'auto'}}>{values[1] ? values[1].textLabel : "secondary measure" }</Typography>
+                <Typography color={secondaryMeasurelabelStyle.color} sx={{fontSize: `${secondaryMeasurelabelStyle.fontSize}px`, wordBreak:'break-word', my:'auto'}}>{values[1] ? values[1].textLabel : "secondary measure" }</Typography>
             </Grid>
             <Grid item xs={6} sx={{my:'auto'}}>
-                <Typography sx={{fontSize:`${secondaryMeasureValueStyle.fontSize}px`,mr:1, textAlign:'right'}}>{secondaryMeasurevalue}</Typography>
+                <Typography color={secondaryMeasureValueStyle.color} sx={{fontSize:`${secondaryMeasureValueStyle.fontSize}px`,mr:1, textAlign:'right'}}>{secondaryMeasurevalue}</Typography>
             </Grid>  
         </Grid>
         </Box>
